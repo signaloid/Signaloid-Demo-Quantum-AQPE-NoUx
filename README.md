@@ -2,9 +2,7 @@
 [<img src="https://assets.signaloid.io/add-to-signaloid-cloud-logo-light-v6.png#gh-light-mode-only" alt="[Add to signaloid.io]" height="30">](https://signaloid.io/repositories?connect=https://github.com/signaloid/Signaloid-Demo-Quantum-AQPE-NoUx#gh-light-mode-only)
 
 
-# Example: Accelerated Quantum Phase Estimation (AQPE) without Signaloid's Infrastructure
-
-## Summary
+# A Traditional Accelerated Quantum Phase Estimation (AQPE)
 This repository contains an implementation of the classical part of the Accelerated Quantum Phase Estimation (AQPE) subroutine of the Accelerated Variational Quantum Eigensolver (AVQE) based on work by Cruise et al. [^0] and Wiebe et al. [^1]. For phase estimation, the implementation uses an efficient approximation to Bayesian inference called Reduction Filtering Phase Estimation (RFPE).
 
 The repository [Signaloid-Demo-Quantum-AQPE](https://github.com/signaloid/Signaloid-Demo-Quantum-AQPE) contains an implementation of AQPE that takes advantage of the capabilities of Signaloid's compute engine and replaces RFPE with a Bayesian inference operation provided by Signaloid's compute engine.
