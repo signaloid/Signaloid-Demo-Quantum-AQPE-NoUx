@@ -26,16 +26,17 @@ With the contemporary NISQ-era quantum computers being capable of maintaining qu
 
 ## An interesting use-case for NISQ era
 After clicking on the "add to signaloid.io" button at the top of this README, you will be connected to the Repositories Tab on the Signaloid Cloud Developer Platform. Next, click on the <img width="45" alt="Screenshot 2023-06-29 at 22 55 31" src="https://github.com/signaloid/Signaloid-Demo-Quantum-AQPE-NoUx/assets/86417/6a076901-ae9b-4933-bf89-d3120baa29f8">
- button to set the command-line arguments to `-p 1e-4 -a 0.5`. This sets $\alpha = 0.5$ and the estimation precision to $10^{-4}$. For these values, the required quantum circuit depth is $D = 100$ and the required number of shots or measurements of the quantum circuit on a quantum computer is $N = 39996$. This depth is achievable by NISQ-era quantum computers.
+ button to set the command-line arguments to `-p 1e-4 -a 0.5`. This sets $\alpha = 0.5$ and the estimation precision to $10^{-4}$. For these values, the required quantum circuit depth is $D = 100$ and the required number of shots or measurements per quantum circuit mapped to a quantum computer is $N = 39996$. This depth is achievable by NISQ-era quantum computers.
 
 ## Usage
 ```
-[-i [path_to_input_csv_file : str] (Default: '../inputs/input.csv')] (Default: stdin)
-[-o [path_to_output_csv_file : str] (Default: './sd0/aqpeOutput.csv')] (Default: stdout)
 [-t <target_phase : double in [-pi, pi]>] (Default: pi / 2)
-[-p <precision_in_phase_estimation : double in (0, inf)>] (Default: 0.01)
-[-a <alpha : double in [0,1]>]  (Default: 1.0)
+[-p <precision_in_phase_estimation : double in (0, inf)>] (Default: 1e-4)
+[-a <alpha : double in [0,1]>]  (Default: 0.5)
 [-n <number_of_evidence_samples_per_iteration : int in [1, inf)>] (Default: 1 / precision^{alpha})
+[-m <number_of_prior_test_samples_per_iteration : int in (0, inf)>] (Default: 1000)
+[-r <number_of_repetitions : size_t in (0, inf)>] (Default: 1)
+[-v] (Verbose mode: Prints details of each repeated AQPE experiment to stdout.)
 [-h] (Display this help message.)
 ```
 
