@@ -294,8 +294,8 @@ main(int argc, char *  argv[])
 {
 	CommandLineArguments	arguments = {
 		.targetPhi				= M_PI / 2,
-		.precision				= 1e-2,
-		.alpha					= 1.0,
+		.precision				= 1e-4,
+		.alpha					= 0.5,
 		.numberOfEvidenceSamplesPerIteration	= 0,
 		.numberOfPriorTestSamplesPerIteration	= 1000,
 		.numberOfRepetitions			= 1,

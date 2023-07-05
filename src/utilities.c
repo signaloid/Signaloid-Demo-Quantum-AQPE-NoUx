@@ -62,8 +62,8 @@ printUsage(void)
 	fprintf(stdout,
 		
 		"[-t <target_phase : double in [-pi, pi]>] (Default: pi / 2)\n"
-		"[-p <precision_in_phase_estimation : double in [%le, %le]>] (Default: 0.01)\n"
-		"[-a <alpha : double in [0,1]>] (Default: 0.0)\n"
+		"[-p <precision_in_phase_estimation : double in [%le, %le]>] (Default: 1e-4)\n"
+		"[-a <alpha : double in [0,1]>] (Default: 0.5)\n"
 		"[-n <number_of_evidence_samples_per_iteration : int in [0, inf)>] (Default: see README.md)\n"
 		"[-m <number_of_prior_test_samples_per_iteration : int in (0, inf)>] (Default: 1000)\n"
 		"[-r <number_of_repetitions : size_t in (0, inf)>] (Default: 1)\n"
